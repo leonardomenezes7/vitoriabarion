@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(assets/fundomobilefotos.jpg);
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  margin: 7rem;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  
+}
+
+.photos img {
+  width: 98vw;
+  border: 2px solid saddlebrown;
+}
+
+@media (min-width: 1000px) {
+
+  body {
+    background-image: url(assets/fundodesktop.jpg);
+    background-repeat: repeat;
+  }
+
+
+  .page {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+  }
+
+  .photos img {
+    max-width: 60vw;
+  }
+}
